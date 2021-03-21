@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <!-- tag untuk memasukan jquery ke dalam file-->
+        <script src ="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        // script untuk menampilkan dan menyempunyikan gambar
+        $(document).ready(function(){
+        $(".sembunyi").click(function() {$("#foto").hide("slow")});
+        $(".tampil").click(function() {$("#foto").show("slow")});
+        });
+        </script>
+        <style>
+            img { width: 500px; height: 500px;}
+        </style>
+    </head>
+    <body>
+        <!-- Button untuk mengekesekusi script-->
+        <button class="sembunyi">sembunyikan</button>
+        <button class="tampil">tampilkan</button>
+        <!-- Gambar yang ingin ditampilkan atau disembunyikan-->
+        <p><img id="foto" src="logoupnbaru.png"></p>
+    </body>
+</html>

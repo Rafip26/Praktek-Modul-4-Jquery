@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <!-- tag untuk memasukan jquery ke dalam file-->
+        <script src ="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        // script untuk mengubah warna teks menjadi biru
+        $(document).ready(function(){
+        $("div").addClass("biru");});
+        </script>
+        <style type="text/css">
+        .biru {
+            color:blue;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- teks yang akan diubah warnanya-->
+            <p>paragraf pertama</p> 
+        </div>
+        <div>
+            <ul>
+                <!-- teks yang akan diubah warnanya-->
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

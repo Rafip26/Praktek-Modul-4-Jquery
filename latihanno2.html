@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!-- tag untuk memasukan jquery ke dalam file-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        // script untuk mengubah warna dengan mengklik 2 kali 
+        $(document).ready(function(){
+            $(".persegi1").dblclick(function(){ $("#kotak1").css("background-color", "blue")}); 
+            $(".persegi2").dblclick(function(){ $("#kotak2").css("background-color", "green")}); 
+            $(".persegi3").dblclick(function(){ $("#kotak3").css("background-color", "black")}); 
+            $(".persegi4").dblclick(function(){ $("#kotak4").css("background-color", "red")}); 
+        })
+
+        </script>
+        <style>
+            p { 
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <!-- Kotak yang akan di rubah warnanya -->
+                <td><p id="kotak1" class="persegi1"></p></td>
+                <td><p id="kotak2" class="persegi2"></p></td>
+                <td><p id="kotak3" class="persegi3"></p></td>
+                <td><p id="kotak4" class="persegi4"></p></td>
+            </tr>
+        </table>
+    </body>
+</html>

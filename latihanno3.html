@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <!-- tag untuk memasukan jquery ke dalam file-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        // script untuk fade in, fade out, dan fade to gambar 
+        $(document).ready(function(){
+        $(".tombolfadein").click(function(){ $("div").fadeIn("slow")}) 
+        $(".tombolfadeout").click(function(){ $("div").fadeOut("slow")})
+        $(".tombolfadeto").click(function(){ $("div").fadeTo("slow", 0.3)})   
+        })
+        </script>
+
+        <style>
+            div { 
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Kotak yang akan di fade in, fade out, dan fade to-->
+        <div></div> <br> 
+        <!-- Button untuk mengeksekusi script-->
+        <button class="tombolfadein">Fade In</button>
+        <button class="tombolfadeout">Fade Out</button>
+        <button class="tombolfadeto">Fade To 0.3</button>
+    </body>
+</html>
